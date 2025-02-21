@@ -36,7 +36,6 @@ const RestaurantsPage = async ({ params }: RestaurantsPageProps) => {
         </p>
       </div>
       <div className="grid grid-cols-2 gap-4 pt-14">
-       
         <Card>
           <CardContent className="flex flex-col items-center gap-8 py-8">
             <div className="relative h-[80px] w-[80px]">
