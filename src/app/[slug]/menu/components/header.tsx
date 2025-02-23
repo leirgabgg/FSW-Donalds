@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
 interface RestaurantHeaderProps {
-  restaurant: Pick<Restaurant, "coverImageUrl" | "name">;
+  restaurant: Pick<Restaurant, "name" | "coverImageUrl">;
 }
 
 const RestaurantHeader = ({ restaurant }: RestaurantHeaderProps) => {
@@ -24,14 +24,12 @@ const RestaurantHeader = ({ restaurant }: RestaurantHeaderProps) => {
       >
         <ChevronLeftIcon />
       </Button>
-
       <Image
         src={restaurant.coverImageUrl}
         alt={restaurant.name}
         fill
         className="object-cover"
       />
-
       <Button
         variant="secondary"
         size="icon"
